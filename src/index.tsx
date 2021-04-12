@@ -10,3 +10,4 @@ export {default as Page} from "./components/Page";
 // hooks
 export {default as useParameter} from "./hooks/useParameter";
 export {default as useNumberParameter} from "./hooks/useNumberParameter";
+export {default as useScrollToTop} from "./hooks/useScrollToTop";
