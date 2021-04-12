@@ -1,0 +1,67 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "react-router-dom": ">=5",
+    "nprogress": "^0.2.0"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.10.2",
+    "@types/react": "^17.0.3",
+    "@types/react-router-dom": ">=5",
+    "@types/react-dom": "^17.0.3",
+    "@types/nprogress": "^0.2.0",
+    "husky": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "size-limit": "^4.10.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "bracketSpacing": false
+  },
+  "name": "react-roter-dom-toolkit",
+  "author": "Vladimir Breusov",
+  "description": "useful components and hooks for react-router-dom",
+  "module": "dist/react-roter-dom-toolkit.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/react-roter-dom-toolkit.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-roter-dom-toolkit.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}

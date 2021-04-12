@@ -1,0 +1,10 @@
+# phpstorm, webstorm
+.idea
+
+*.log
+.DS_Store
+node_modules
+.cache
+dist
+
+.parcel-cache
