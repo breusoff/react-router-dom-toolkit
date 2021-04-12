@@ -1,15 +1,11 @@
 {
+  "name": "react-roter-dom-toolkit",
   "version": "0.1.0",
+  "author": "Vladimir Breusov",
+  "description": "useful components and hooks for react-router-dom",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -50,10 +46,14 @@
     "tabWidth": 4,
     "bracketSpacing": false
   },
-  "name": "react-roter-dom-toolkit",
-  "author": "Vladimir Breusov",
-  "description": "useful components and hooks for react-router-dom",
   "module": "dist/react-roter-dom-toolkit.esm.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "size-limit": [
     {
       "path": "dist/react-roter-dom-toolkit.cjs.production.min.js",
