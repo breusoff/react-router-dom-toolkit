@@ -1,16 +1,21 @@
 import "react-app-polyfill/ie11";
-import React, {Suspense} from "react";
+import React, {Suspense, lazy} from "react";
 import {BrowserRouter as Router, Switch} from "react-router-dom";
 import ReactDOM from "react-dom";
-import {SuspenseLoading, MapRoutes} from "../.";
+import {SuspenseLoading, NotFoundRoute, mapRoutes} from "../.";
 import routes from "./src/routes";
+
+const NotFoundPage = lazy(() => import("./src/components/NotFoundPage"));
 
 const App = () => {
     return (
         <Router>
             <Suspense fallback={<SuspenseLoading />}>
                 <Switch>
-                    <MapRoutes routes={routes} />
+                    {mapRoutes(routes)}
+                    <NotFoundRoute redirect>
+                        <NotFoundPage />
+                    </NotFoundRoute>
                 </Switch>
             </Suspense>
         </Router>

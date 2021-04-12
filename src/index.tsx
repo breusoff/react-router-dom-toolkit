@@ -2,9 +2,12 @@
 export {default as IRoute} from "./interfaces/IRoute";
 export {default as IRoutes} from "./interfaces/IRoutes";
 
+// core
+export {default as mapRoutes} from "./core/mapRoutes";
+
 // components
 export {default as SuspenseLoading} from "./components/SuspenseLoading";
-export {default as MapRoutes} from "./components/MapRoutes";
+export {default as NotFoundRoute} from "./components/NotFoundRoute";
 
 // hooks
 export {default as useParameter} from "./hooks/useParameter";
