@@ -1,5 +1,5 @@
 {
-  "name": "react-roter-dom-toolkit",
+  "name": "react-router-dom-toolkit",
   "version": "0.1.0",
   "author": "Vladimir Breusov",
   "description": "useful components and hooks for react-router-dom",
@@ -46,7 +46,7 @@
     "tabWidth": 4,
     "bracketSpacing": false
   },
-  "module": "dist/react-roter-dom-toolkit.esm.js",
+  "module": "dist/react-router-dom-toolkit.esm.js",
   "files": [
     "dist",
     "src"
@@ -56,11 +56,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/react-roter-dom-toolkit.cjs.production.min.js",
+      "path": "dist/react-router-dom-toolkit.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/react-roter-dom-toolkit.esm.js",
+      "path": "dist/react-router-dom-toolkit.esm.js",
       "limit": "10 KB"
     }
   ]
