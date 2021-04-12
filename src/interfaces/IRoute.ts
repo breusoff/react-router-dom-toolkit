@@ -2,15 +2,27 @@ import {ReactNode} from "react";
 
 export default interface IRoute {
     /**
-     * Url по которому доступна страница
+     * URL of page to match with optional parameter
      */
-    url: (param?: string | number) => string;
+    path: (parameter?: string | number) => string;
     /**
-     * Заголовок страницы
+     * Page title
      */
     title: string;
     /**
-     * Страница, которая рендерится
+     * A React component to render only when the location matches
      */
     page: ReactNode;
+    /**
+     * When true, will only match if the path matches the location.pathname exactly.
+     */
+    exact?: boolean;
+    /**
+     * When true, will match if the path is case sensitive.
+     */
+    sensitive?: boolean;
+    /**
+     * When true, a path that has a trailing slash will only match a location.pathname with a trailing slash.
+     */
+    strict?: boolean;
 }

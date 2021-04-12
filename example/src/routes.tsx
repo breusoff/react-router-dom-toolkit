@@ -14,18 +14,21 @@ const ParameterPage = lazy(() => import("../src/components/ParameterPage"));
 const routes: IAppRoutes = {
     main: {
         title: "Main Page",
-        url: () => "/",
+        path: () => "/",
         page: <MainPage />,
+        exact: true,
     },
     second: {
         title: "Second Page",
-        url: () => "/second",
+        path: () => "/second",
         page: <SecondPage />,
+        exact: true,
     },
     withParameter: {
         title: "Parameter Page",
-        url: param => `/parameter/${param}`,
+        path: param => `/parameter/${param}`,
         page: <ParameterPage />,
+        exact: true,
     },
 };
 

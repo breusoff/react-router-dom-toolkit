@@ -10,10 +10,16 @@ const MapRoutes: FC<IMapRoutesProps> = ({routes}) => {
     return (
         <>
             {Object.entries(routes).map(
-                ([key, route]) =>
-                    route.page && (
-                        <Route exact path={route.url(":parameter")} key={key}>
-                            {route.page}
+                ([key, {sensitive, exact, page, path, strict}]) =>
+                    page && (
+                        <Route
+                            exact={exact}
+                            sensitive={sensitive}
+                            strict={strict}
+                            path={path(":parameter")}
+                            key={key}
+                        >
+                            {page}
                         </Route>
                     ),
             )}
