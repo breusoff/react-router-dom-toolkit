@@ -4,12 +4,14 @@ import {BrowserRouter as Router, Switch} from "react-router-dom";
 import ReactDOM from "react-dom";
 import {SuspenseLoading, NotFoundRoute, mapRoutes} from "../.";
 import routes from "./src/routes";
+import NavBar from "./src/components/NavBar";
 
 const NotFoundPage = lazy(() => import("./src/components/NotFoundPage"));
 
 const App = () => {
     return (
         <Router>
+            <NavBar />
             <Suspense fallback={<SuspenseLoading />}>
                 <Switch>
                     {mapRoutes(routes)}
