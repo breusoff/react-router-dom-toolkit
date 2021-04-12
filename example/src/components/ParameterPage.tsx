@@ -1,7 +1,8 @@
 import React from "react";
 import routes from "../routes";
-import {useParameter, Page} from "../../..";
+import {useParameter} from "../../..";
 import NavBar from "./NavBar";
+import Page from "./Page";
 
 const ParameterPage = () => {
     const parameter = useParameter();
