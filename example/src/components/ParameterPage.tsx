@@ -1,15 +1,16 @@
 import React from "react";
+import routes from "../routes";
+import {useParameter, Page} from "../../..";
 import NavBar from "./NavBar";
-import {useParameter} from "../../..";
 
 const ParameterPage = () => {
     const parameter = useParameter();
 
     return (
-        <div>
+        <Page route={routes.withParameter}>
             <NavBar />
             <h1>Parameter Page {parameter}</h1>
-        </div>
+        </Page>
     );
 };
 

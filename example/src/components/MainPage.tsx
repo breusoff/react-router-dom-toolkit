@@ -1,12 +1,14 @@
 import React from "react";
+import routes from "../routes";
+import {Page} from "../../..";
 import NavBar from "./NavBar";
 
 const MainPage = () => {
     return (
-        <div>
+        <Page route={routes.main}>
             <NavBar />
             <h1>Main Page</h1>
-        </div>
+        </Page>
     );
 };
 
