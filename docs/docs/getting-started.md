@@ -17,3 +17,18 @@ or
 yarn add react-router-dom-toolkit
 ```
 
+## Dependencies
+
+Let's also install dependencies used by this package, then we can move forward with starting to write some code.
+
+The libraries we will install now are **react-router-dom**. If you already have these libraries installed and at the latest version, you are done here!
+
+```shell
+npm i react-router-dom
+```
+
+or
+
+```shell
+yarn add react-router-dom
+```
