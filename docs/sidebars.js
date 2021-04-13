@@ -16,6 +16,11 @@ module.exports = {
                 },
                 {
                     type: "category",
+                    label: "Components",
+                    items: ["not-found"],
+                },
+                {
+                    type: "category",
                     label: "Hooks",
                     items: [
                         "use-scroll-to-top",
