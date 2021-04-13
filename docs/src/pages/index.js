@@ -11,7 +11,7 @@ export default function Home() {
     const {siteConfig = {}} = context;
     return (
         <Layout
-            title={`Hello from ${siteConfig.title}`}
+            title="Documentation"
             description="Useful components and hooks for react-router-dom"
         >
             <header className={clsx("hero hero--primary", styles.heroBanner)}>
@@ -37,7 +37,37 @@ export default function Home() {
                 </div>
             </header>
             <main>
-                <div className="container">Some info</div>
+                <div className="container">
+                    <div className={clsx("row", styles.features)}>
+                        <div className="col">
+                            <h2>Simple</h2>
+                            <p>
+                                Includes utilities to simplify common use cases
+                                like{" "}
+                                <b>
+                                    routes mapping, loading, 404 pages, scroll
+                                    restoring, title setting
+                                </b>{" "}
+                                and more.
+                            </p>
+                        </div>
+                        <div className="col">
+                            <h2>Opinionated</h2>
+                            <p>
+                                Provides good defaults for routing setup out of
+                                the box, and includes the most commonly used
+                                patterns
+                            </p>
+                        </div>
+                        <div className="col">
+                            <h2>Effective</h2>
+                            <p>
+                                Lets you focus on the core logic your app needs,
+                                so you can do more work with less code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </main>
         </Layout>
     );

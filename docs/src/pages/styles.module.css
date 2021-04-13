@@ -17,7 +17,7 @@
 }
 
 .heroLogo {
-    width: 100px;
+    width: 160px;
 }
 
 @media screen and (max-width: 966px) {
@@ -40,4 +40,8 @@
 .getStarted:hover {
     background-color: var(--primary);
     color: #fff !important;
+}
+
+.features {
+    padding: 2rem 0;
 }
