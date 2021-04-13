@@ -63,7 +63,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
                     editUrl:
-                        "https://github.com/vbdzzz/react-router-dom-toolkit/edit/master/website/",
+                        "https://github.com/vbdzzz/react-router-dom-toolkit/edit/master/docs/",
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),

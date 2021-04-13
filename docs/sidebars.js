@@ -19,6 +19,11 @@ module.exports = {
                         "use-number-parameter",
                     ],
                 },
+                {
+                    type: "category",
+                    label: "Interfaces",
+                    items: ["i-routes", "i-route"],
+                },
             ],
         },
     ],
