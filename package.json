@@ -1,71 +1,77 @@
 {
-  "name": "react-router-dom-toolkit",
-  "version": "1.0.0",
-  "author": "Vladimir Breusov",
-  "description": "useful components and hooks for react-router-dom",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0"
-  },
-  "dependencies": {
-    "nprogress": "^0.2.0",
-    "react-router-dom": ">=5"
-  },
-  "devDependencies": {
-    "@size-limit/preset-small-lib": "^4.10.2",
-    "@types/nprogress": "^0.2.0",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.3",
-    "@types/react-router-dom": ">=5",
-    "husky": "^6.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "size-limit": "^4.10.2",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.2.0",
-    "typescript": "^4.2.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vbdzzz/react-router-dom-toolkit"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "trailingComma": "all",
-    "tabWidth": 4,
-    "bracketSpacing": false
-  },
-  "module": "dist/react-router-dom-toolkit.esm.js",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
-  "size-limit": [
-    {
-      "path": "dist/react-router-dom-toolkit.cjs.production.min.js",
-      "limit": "10 KB"
+    "name": "react-router-dom-toolkit",
+    "version": "1.0.0",
+    "author": "Vladimir Breusov",
+    "description": "useful components and hooks for react-router-dom",
+    "keywords": [
+        "react",
+        "react-router-dom",
+        "toolkit",
+        "starter"
+    ],
+    "license": "MIT",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "scripts": {
+        "start": "tsdx watch",
+        "build": "tsdx build",
+        "test": "tsdx test --passWithNoTests",
+        "lint": "tsdx lint",
+        "prepare": "tsdx build",
+        "size": "size-limit",
+        "analyze": "size-limit --why"
     },
-    {
-      "path": "dist/react-router-dom-toolkit.esm.js",
-      "limit": "10 KB"
-    }
-  ]
+    "peerDependencies": {
+        "react": ">=16.8.0"
+    },
+    "dependencies": {
+        "nprogress": "^0.2.0",
+        "react-router-dom": ">=5"
+    },
+    "devDependencies": {
+        "@size-limit/preset-small-lib": "^4.10.2",
+        "@types/nprogress": "^0.2.0",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.3",
+        "@types/react-router-dom": ">=5",
+        "husky": "^6.0.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "size-limit": "^4.10.2",
+        "tsdx": "^0.14.1",
+        "tslib": "^2.2.0",
+        "typescript": "^4.2.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vbdzzz/react-router-dom-toolkit"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsdx lint"
+        }
+    },
+    "prettier": {
+        "trailingComma": "all",
+        "tabWidth": 4,
+        "bracketSpacing": false
+    },
+    "module": "dist/react-router-dom-toolkit.esm.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=10"
+    },
+    "size-limit": [
+        {
+            "path": "dist/react-router-dom-toolkit.cjs.production.min.js",
+            "limit": "10 KB"
+        },
+        {
+            "path": "dist/react-router-dom-toolkit.esm.js",
+            "limit": "10 KB"
+        }
+    ]
 }
