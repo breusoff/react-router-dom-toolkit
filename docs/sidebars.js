@@ -12,7 +12,7 @@ module.exports = {
                 {
                     type: "category",
                     label: "Hooks",
-                    items: ["use-scroll-to-top"],
+                    items: ["use-scroll-to-top", "use-title"],
                 },
             ],
         },

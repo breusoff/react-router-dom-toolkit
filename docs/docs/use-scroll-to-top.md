@@ -9,6 +9,7 @@ Most of the time all you need is to “scroll to the top” because you have a l
 
 ```tsx
 import React, {FC} from "react";
+import {BrowserRouter as Router} from "react-router-dom";
 import {useScrollToTop} from 'react-router-dom-toolkit';
 
 const Layout: FC = ({children}) => {
