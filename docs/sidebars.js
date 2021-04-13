@@ -11,6 +11,11 @@ module.exports = {
             items: [
                 {
                     type: "category",
+                    label: "Core",
+                    items: ["map-routes"],
+                },
+                {
+                    type: "category",
                     label: "Hooks",
                     items: [
                         "use-scroll-to-top",

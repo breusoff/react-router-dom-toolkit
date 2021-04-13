@@ -1,19 +1,18 @@
 ---
-title: IRoutes
-slug: /i-routes
+title: Map Routes
+slug: /map-routes
 ---
 
-Base interface for application routing.
-You should declare all your routes in one place.
-Used for Router generation.
+Fills the router with pages 
 
-Watch **IRoute** [documentation](/docs/i-route)
+Watch **IRoutes** [documentation](/docs/i-routes)
 
 ## Usage
 
 ```tsx
 import React from "react";
-import {IRoutes, IRoute} from 'react-router-dom-toolkit';
+import {BrowserRouter as Router, Switch} from "react-router-dom";
+import {IRoutes, IRoute, mapRoutes} from 'react-router-dom-toolkit';
 
 interface IAppRoutes extends IRoutes {
     main: IRoute;
@@ -42,5 +41,18 @@ const routes: IAppRoutes = {
     },
 };
 
-
+const App = () => {
+    return (
+        <Router>
+            <Switch>
+                {mapRoutes(routes)}
+            </Switch>
+        </Router>
+    );
+};
 ```
+
+## Arguments
+| Props | Type | Default | Description |
+|-------|------|---------|-------------|
+| routes | IRoutes | - | application routes |
