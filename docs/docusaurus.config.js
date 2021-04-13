@@ -2,8 +2,8 @@
 module.exports = {
     title: "React Router Dom Toolkit",
     tagline: "Useful components and hooks for react-router-dom",
-    url: "https://vbdzzz.github.io/react-router-dom-toolkit/",
-    baseUrl: "/",
+    url: "https://vbdzzz.github.io",
+    baseUrl: "/react-router-dom-toolkit/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
@@ -21,7 +21,7 @@ module.exports = {
                     to: "docs/",
                     activeBasePath: "docs",
                     label: "Docs",
-                    position: "left",
+                    position: "right",
                 },
                 {
                     href: "https://github.com/vbdzzz/react-router-dom-toolkit",
