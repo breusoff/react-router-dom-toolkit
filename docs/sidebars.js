@@ -8,7 +8,13 @@ module.exports = {
         {
             type: "category",
             label: "API Reference",
-            items: ["getting-started"],
+            items: [
+                {
+                    type: "category",
+                    label: "Hooks",
+                    items: ["use-scroll-to-top"],
+                },
+            ],
         },
     ],
 };

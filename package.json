@@ -47,6 +47,7 @@
         "type": "git",
         "url": "https://github.com/vbdzzz/react-router-dom-toolkit"
     },
+    "homepage": "https://vbdzzz.github.io/react-router-dom-toolkit",
     "husky": {
         "hooks": {
             "pre-commit": "tsdx lint"
