@@ -8,6 +8,7 @@ export {default as mapRoutes} from "./core/mapRoutes";
 // components
 export {default as SuspenseLoading} from "./components/SuspenseLoading";
 export {default as NotFoundRoute} from "./components/NotFoundRoute";
+export {default as ScrollToTop} from "./components/ScrollToTop";
 
 // hooks
 export {default as useParameter} from "./hooks/useParameter";

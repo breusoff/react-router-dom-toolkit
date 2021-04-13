@@ -17,7 +17,7 @@ module.exports = {
                 {
                     type: "category",
                     label: "Components",
-                    items: ["suspense-loading", "not-found"],
+                    items: ["suspense-loading", "not-found", "scroll-to-top"],
                 },
                 {
                     type: "category",
