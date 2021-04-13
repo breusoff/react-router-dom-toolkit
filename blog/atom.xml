@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://vbdzzz.github.io/react-router-dom-toolkit/blog</id>
+    <id>https://vbdzzz.github.io/blog</id>
     <title>React Router Dom Toolkit Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://vbdzzz.github.io/react-router-dom-toolkit/blog"/>
+    <link rel="alternate" href="https://vbdzzz.github.io/blog"/>
     <subtitle>React Router Dom Toolkit Blog</subtitle>
-    <icon>http://vbdzzz.github.io/react-router-dom-toolkit/img/favicon.ico</icon>
+    <icon>https://vbdzzz.github.io/img/favicon.ico</icon>
 </feed>
